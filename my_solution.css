@@ -108,9 +108,9 @@
   /* Esercizio 11 */
   
   .ex-11-icon:hover {
-      animation: second-spin 2s linear;
+      animation: semi-spin 2s linear;
   }
-  @keyframes second-spin {
+  @keyframes semi-spin {
       0% {
           transform: rotate(0);
       }
@@ -128,8 +128,8 @@
       animation: test-move 2s linear;
   }
   @keyframes test-move {
-      0% { left: 10% }
-      50% { left: 70%; }
+      0% { left: 10%; }
+      50% { left: 60%; }
       100% { left: 10%; }
   }
   .ex-12-button:hover .ex-12-bottom-white {
@@ -137,8 +137,33 @@
   }
   @keyframes second-test-move {
       0% { right: 10%; }
-      50% { right: 70%; }
+      50% { right: 60%; }
       100% { right: 10%; }
   }
   
   /* Esercizio 13 */
+
+  .ex-13-button:hover .ex-13-top-white {
+    animation: test-move-top 2s linear;
+}
+
+  @keyframes test-move-top {
+    0%   {left: 10px;  top: -10px;}
+    20%  {left: 150px; top: -10px;}
+    35%  {left: 150px; top: 60px;}
+    60%  {left: -20px; top: 60px;}
+    80%  {left: -20px; top: -10px;}
+    100% {left: 10px; top: -10px; }
+  }
+
+  .ex-13-button:hover .ex-13-bottom-white {
+    animation: test-move-bottom 2s linear;
+}
+  @keyframes test-move-bottom {
+    0%   {right: 10px;  bottom: -10px;}
+    20%  {right: 150px; bottom: -10px;}
+    35%  {right: 150px; bottom: 60px;}
+    60%  {right: -20px; bottom: 60px;}
+    80%  {right: -20px; bottom: -10px;}
+    100% {right: 10px; bottom: -10px; }
+  }
